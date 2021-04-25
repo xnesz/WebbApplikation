@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using ResturantReview.Application;
-using ResturantReview.Infrastructure;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,11 +28,12 @@ namespace ResturantReview.API
         {
 
             AddSwagger(services);
+            services.AddControllers();
 
 
             //Gör att vi kan använda services mellan projekt // lagt till
             services.AddApplicationServices(Configuration); // använder ResturantReview.application
-            services.AddInfrastructureServices(Configuration); // använder ResturantReview.Infrastructure
+           
 
 
         }
@@ -45,7 +46,7 @@ namespace ResturantReview.API
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "BicycleRental API",
+                    Title = "ResturantReview API",
 
                 });
 
@@ -66,6 +67,14 @@ namespace ResturantReview.API
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.RoutePrefix = "";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "REsturantReview API");
+
+            });
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

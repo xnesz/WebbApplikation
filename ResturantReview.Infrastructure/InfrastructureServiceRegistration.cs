@@ -13,7 +13,7 @@ namespace ResturantReview.Infrastructure
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<MyDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("Server=(localdb)\\mssqllocaldb;Database=ResturantReviewDB;Trusted_Connection=True;")));
+                options.UseSqlServer(configuration.GetConnectionString("ResturantReviewConnectionString")));
 
             return services;
         }

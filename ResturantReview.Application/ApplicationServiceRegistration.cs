@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ResturantReview.Domain.Infreastructure;
+using ResturantReview.Infrastructure;
 using ResturantReview.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
@@ -16,10 +17,10 @@ namespace ResturantReview.Application
 
 
 
-            services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
-           // services.AddScoped<IModelRepository, ModelRepository>();
+            services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>)); 
             services.AddScoped<IReviewRepository, ReviewRepository>();
             services.AddScoped<IResturantRepository, ResturantRepository>();
+            services.AddInfrastructureServices(configuration);
 
 
             //Aktiverar automapper i Core

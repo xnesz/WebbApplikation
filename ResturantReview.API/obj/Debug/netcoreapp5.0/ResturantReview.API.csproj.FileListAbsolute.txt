@@ -67,3 +67,5 @@ C:\Users\sebas\source\repos\ResturantReview\ResturantReview.API\obj\Debug\netcor
 C:\Users\sebas\source\repos\ResturantReview\ResturantReview.API\obj\Debug\netcoreapp5.0\ref\ResturantReview.API.dll
 C:\Users\sebas\source\repos\ResturantReview\ResturantReview.API\obj\Debug\netcoreapp5.0\ResturantReview.API.pdb
 C:\Users\sebas\source\repos\ResturantReview\ResturantReview.API\obj\Debug\netcoreapp5.0\ResturantReview.API.genruntimeconfig.cache
+C:\Users\sebas\source\repos\ResturantReview\ResturantReview.API\bin\Debug\netcoreapp5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\sebas\source\repos\ResturantReview\ResturantReview.API\bin\Debug\netcoreapp5.0\Microsoft.Extensions.DependencyModel.dll

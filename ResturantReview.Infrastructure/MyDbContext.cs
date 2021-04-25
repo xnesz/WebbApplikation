@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ResturantReview.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,8 +15,10 @@ namespace ResturantReview.Infrastructure
         {
         }
 
-        public DbSet<Model> Models { get; set; }
 
+
+        public DbSet<Resturant> Resturants { get; set; }
+        public DbSet<Review> Reviews { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

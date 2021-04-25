@@ -18,7 +18,7 @@ namespace ResturantReview.Infrastructure.Configuration
 
             modelBuilder
                 .HasOne(review => review.Resturant)
-                .WithMany(Review => Review.Reviews)
+                .WithMany(resturant => resturant.Reviews)
                 .HasForeignKey(review => review.ResturantID);
 
         }
