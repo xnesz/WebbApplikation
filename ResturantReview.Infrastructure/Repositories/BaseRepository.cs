@@ -20,7 +20,7 @@ namespace ResturantReview.Infrastructure.Repositories
         //Väldigt viktigt att i BaseRepository ska endast finnas metoder som flera klasser ska använda sig utav
         //Annars ska man skriva det i den specifika repositorien. Tex ModelRepository
 
-        public virtual async Task<T> GetByIdAsync(double id)
+        public virtual async Task<T> GetByIdAsync(Guid id)
         {
             return await _myDbContext.Set<T>().FindAsync(id);
         }
@@ -61,6 +61,8 @@ namespace ResturantReview.Infrastructure.Repositories
             await _myDbContext.SaveChangesAsync();
 
         }
+
+       
     }
 }
 
