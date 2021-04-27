@@ -11,7 +11,10 @@ namespace ResturantReview.Domain.Infreastructure
         //Kopior av task ifrån vanliga repositories:
         //exempel:
         //Task<TEntity> GetByIdAsync(double ID);
-        Task<TEntity> GetByIdAsync(double ID);
+        Task<TEntity> GetByIdAsync(Guid ID);
+
+        
+
 
         Task<IReadOnlyList<TEntity>> ListAllAsync();
 

@@ -8465,19 +8465,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Robin\\.nuget\\packages\\": {}
+    "C:\\Users\\sebas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Robin\\source\\repos\\WebbApplikation\\ResturantReview.Infrastructure\\ResturantReview.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\sebas\\source\\repos\\ResturantReview\\ResturantReview.Infrastructure\\ResturantReview.Infrastructure.csproj",
       "projectName": "ResturantReview.Infrastructure",
-      "projectPath": "C:\\Users\\Robin\\source\\repos\\WebbApplikation\\ResturantReview.Infrastructure\\ResturantReview.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Robin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Robin\\source\\repos\\WebbApplikation\\ResturantReview.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\sebas\\source\\repos\\ResturantReview\\ResturantReview.Infrastructure\\ResturantReview.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebas\\source\\repos\\ResturantReview\\ResturantReview.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Robin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8491,8 +8491,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\Robin\\source\\repos\\WebbApplikation\\ResturantReview.Domain\\ResturantReview.Domain.csproj": {
-              "projectPath": "C:\\Users\\Robin\\source\\repos\\WebbApplikation\\ResturantReview.Domain\\ResturantReview.Domain.csproj"
+            "C:\\Users\\sebas\\source\\repos\\ResturantReview\\ResturantReview.Domain\\ResturantReview.Domain.csproj": {
+              "projectPath": "C:\\Users\\sebas\\source\\repos\\ResturantReview\\ResturantReview.Domain\\ResturantReview.Domain.csproj"
             }
           }
         }
@@ -8563,7 +8563,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

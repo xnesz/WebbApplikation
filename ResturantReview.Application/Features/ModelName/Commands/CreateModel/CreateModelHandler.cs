@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ResturantReview.Application.Features.ModelName.Commands.CreateModel
 {
-    public class CreateModelHandler
+    public class CreateResturantHandler
     {
         //Innehåller kod för metoder, sparar detta sedan genom att kalla på Repository för sin klass
 
